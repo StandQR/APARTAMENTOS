@@ -1097,6 +1097,13 @@ function submitForm() {
     : '';
   go('s-ok');
 }
+fetch('Informacion_Torde
+      
+      .html') 
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('seccion-guia').innerHTML = data;
+    });
 </script>
 </body>
 </html>
