@@ -461,7 +461,7 @@
 
         <div class="guia-section-title" style="padding-top:14px">Toca una categoría para expandir</div>
 
-        <!-- MONUMENTOS -->
+        <!-- MONUMENTOS PRUEBA -->
         <div class="accordion" style="margin-bottom:12px">
           <div class="accordion-header" onclick="toggleAcc(this)">
             <div class="accordion-cat-icon" style="background:#EEEDFE">🏛️</div>
