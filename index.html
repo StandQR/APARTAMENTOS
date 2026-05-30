@@ -468,7 +468,7 @@
       <div class="wifi-page">
         <div class="wifi-card">
           <div class="wifi-header-bar">
-            <div class="wifi-icon-lg">📶</div>
+            <div class="wifi-icon-lg">🛜</div>
             <div class="wifi-header-title">Conexión WiFi gratuita</div>
             <div class="wifi-header-sub">Incluida en tu estancia</div>
           </div>
@@ -504,60 +504,6 @@
         </div>
       </div>
     </div>
-
-    <!-- FORMULARIO -->
-    <div id="s-form" class="screen">
-      <div class="header">
-        <button class="header-back" onclick="go('s-home')">‹</button>
-        <div><div class="header-title">Opiniones y reclamaciones</div></div>
-      </div>
-      <div class="form-page">
-
-        <div class="form-section">
-          <div class="form-section-label">¿Cómo va la estancia?</div>
-          <div class="stars" id="stars">
-            <span class="star" data-v="1">★</span>
-            <span class="star" data-v="2">★</span>
-            <span class="star" data-v="3">★</span>
-            <span class="star" data-v="4">★</span>
-            <span class="star" data-v="5">★</span>
-          </div>
-          <div class="stars-label" id="starsLabel">Selecciona una puntuación</div>
-        </div>
-        <div class="form-section">
-          <div class="form-section-label">Área relacionada</div>
-          <div class="area-grid">
-            <button class="area-chip" data-area="limpieza" onclick="selectArea(this)">🧹 Limpieza</button>
-            <button class="area-chip" data-area="atencion" onclick="selectArea(this)">🤝 Atención al cliente</button>
-            <button class="area-chip" data-area="checkin" onclick="selectArea(this)">🏠 Check-in</button>
-            <button class="area-chip" data-area="ruido" onclick="selectArea(this)">🔇 Ruido</button>
-            <button class="area-chip" data-area="instalaciones" onclick="selectArea(this)">🚿 Instalaciones</button>
-            <button class="area-chip" data-area="otro" onclick="selectArea(this)">💬 Otro</button>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="form-section-label">Descripción</div>
-          <textarea class="f-textarea" id="f-desc" placeholder="Cuéntanos qué ocurrió o qué podríamos mejorar..."></textarea>
-        </div>
-        <button class="submit-btn" onclick="submitForm()">Enviar opinión</button>
-      </div>
-    </div>
-
-    <!-- ÉXITO -->
-    <div id="s-ok" class="screen">
-      <div class="header">
-        <div style="width:30px"></div>
-        <div><div class="header-title">Grupo Oliveira</div></div>
-      </div>
-      <div class="success-screen">
-        <div class="success-circle">✅</div>
-        <div class="success-title">¡Gracias por tu opinión!</div>
-        <div class="success-desc">Hemos recibido tu mensaje. Nuestro equipo lo revisará y tomará las medidas necesarias para mejorar tu estancia.</div>
-        <div id="ok-apto" style="margin-top:8px;font-size:12px;color:#7bbfcc;font-weight:600;"></div>
-        <button class="success-back" onclick="go('s-home')">Volver al menú</button>
-      </div>
-    </div>
-
   </div>
 </div>
 
@@ -589,41 +535,6 @@ function copyText(txt, btn) {
   } catch(e) {
     btn.textContent = '✗ error'; setTimeout(() => btn.textContent = 'copiar', 1500);
   }
-}
-
-// ── FORMULARIO ────────────────────────────────────────────────────────────────
-let rating = 0;
-let selectedArea = '';
-const starLabels = ['', 'Muy mala 😞', 'Mala 😕', 'Regular 😐', 'Buena 😊', 'Excelente 🤩'];
-
-document.querySelectorAll('.star').forEach(s => {
-  s.addEventListener('click', () => {
-    rating = +s.dataset.v;
-    document.querySelectorAll('.star').forEach(st => st.classList.toggle('active', +st.dataset.v <= rating));
-    document.getElementById('starsLabel').textContent = starLabels[rating];
-  });
-});
-
-function selectArea(el) {
-  document.querySelectorAll('.area-chip').forEach(c => c.classList.remove('selected'));
-  el.classList.add('selected');
-  selectedArea = el.dataset.area;
-}
-
-function submitForm() {
-  const desc = document.getElementById('f-desc').value.trim();
-  if (!rating || !selectedArea || !desc) {
-    const btn = document.querySelector('.submit-btn');
-    btn.textContent = '⚠️ Completa todos los campos';
-    btn.style.background = '#1e5f74';
-    setTimeout(() => { btn.textContent = 'Enviar opinión'; btn.style.background = '#3A5068'; }, 2200);
-    return;
-  }
-  // Show apartment number in success screen
-  document.getElementById('ok-apto').textContent = aptoNum !== 'No especificado'
-    ? 'Apartamento ' + aptoNum
-    : '';
-  go('s-ok');
 }
 </script>
 </body>
