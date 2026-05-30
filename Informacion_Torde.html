@@ -9,57 +9,9 @@
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: white;
-    margin: 0;
-    padding: 0;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .screen { display: none; flex-direction: column; flex: 1; overflow-y: auto; min-height: 100vh; }
-  .screen.active { display: flex; }
-
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: #f0ebe4;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    padding: 20px;
-  }
-  .phone-frame {
-    width: 390px;
-    min-height: 720px;
-    background: white;
-    border-radius: 40px;
-    overflow: hidden;
-    box-shadow: 0 24px 80px rgba(0,0,0,0.18), 0 4px 16px rgba(0,0,0,0.10);
-    position: relative;
-    border: 6px solid #2a2a2a;
-    display: flex;
-    flex-direction: column;
-  }
-  .notch {
-    width: 120px; height: 28px;
-    background: #2a2a2a;
-    border-radius: 0 0 20px 20px;
-    margin: 0 auto;
-    position: absolute;
-    top: 0; left: 50%; transform: translateX(-50%);
-    z-index: 50;
-  }
-  .app {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    padding-top: 28px;
   }
 
-  .screen { display: none; flex-direction: column; flex: 1; overflow-y: auto; }
-  .screen.active { display: flex; }
 
   /* Header */
   .header {
@@ -439,7 +391,7 @@
 <body>
 
 <!-- GUÍA TURÍSTICA -->
-    <div id="s-guia" class="screen active">
+    <div id="s-guia">
       <div class="header">
         <button class="header-back" onclick="history.back()">‹</button>
         <div>
