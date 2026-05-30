@@ -461,11 +461,11 @@
 
         <div class="guia-section-title" style="padding-top:14px">Toca una categoría para expandir</div>
 
-        <!-- MONUMENTOS PRUEBA -->
+        <!-- MONUMENTOS -->
         <div class="accordion" style="margin-bottom:12px">
           <div class="accordion-header" onclick="toggleAcc(this)">
             <div class="accordion-cat-icon" style="background:#EEEDFE">🏛️</div>
-            <span class="accordion-title">Monumentos e historia</span>
+            <span class="accordion-title">Monumentos e historia PRUEBA</span>
             <span class="accordion-count">9</span>
             <span class="accordion-chevron">›</span>
           </div>
