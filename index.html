@@ -6,16 +6,36 @@
 <title>Grupo Oliveira — Apartamentos Turísticos</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  html, body {
+    height: 100%;       /* Asegura que ocupen toda la altura */
+    width: 100%;
+    overflow: hidden;   /* Elimina el scroll general */
+    margin: 0;
+    padding: 0;
+  }
+
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: white;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
   }
 
-  .screen { display: none; flex-direction: column; flex: 1; overflow-y: auto; }
+  .app { /* Asegúrate de que el contenedor principal también ocupe todo */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .screen { 
+    display: none; 
+    flex-direction: column; 
+    flex: 1; 
+    overflow-y: auto; /* Aquí sí permitimos scroll solo si el contenido interno es muy largo */
+    height: 100%;     /* Evita que el contenedor sea más alto que la pantalla */
+  }
   .screen.active { display: flex; }
 
   /* Header */
