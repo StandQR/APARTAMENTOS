@@ -119,6 +119,12 @@
     flex-shrink: 0;
   }
   .icon-map { background: #dff0f5; }
+  .icon-normas { background: #EEF0FA; }
+  .icon-wifi { background: #dff0f5; }
+  .icon-form { background: #e8f0f5; }
+  .menu-text-title { font-size: 15px; font-weight: 600; color: #2a2a2a; }
+  .menu-text-sub { font-size: 12px; color: #888; margin-top: 3px; }
+  .menu-arrow { margin-left: auto; color: #ccc; font-size: 20px; font-weight: 300; }
 
 
   .schedule-days { font-weight: 700; color: #3A5068; font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; min-width: 70px; }
@@ -129,18 +135,8 @@
   .badge-paid { background: #fdf0ee; color: #C0392B; }
   .badge-free-cond { background: #EEF0FA; color: #3A5068; }
 
-  /* Normas */
-  .icon-normas { background: #EEF0FA; }
-  .icon-wifi { background: #dff0f5; }
-  .icon-form { background: #e8f0f5; }
-  .menu-text-title { font-size: 15px; font-weight: 600; color: #2a2a2a; }
-  .menu-text-sub { font-size: 12px; color: #888; margin-top: 3px; }
-  .menu-arrow { margin-left: auto; color: #ccc; font-size: 20px; font-weight: 300; }
-
-  /* GUÍA / MAPA */
-  .popup-gmaps:hover { background: #2C3E4F; }
-
   /* WIFI */
+  #s-wifi { overflow: hidden; }
   .wifi-page { padding: 16px; background: #f0f4f7; flex: 1; }
   .wifi-card {
     background: white;
@@ -193,120 +189,8 @@
   .qr-placeholder-text { font-size: 10px; color: #aaa; text-align: center; line-height: 1.4; }
   .qr-note { font-size: 11px; color: #aaa; margin-top: 12px; }
 
-  /* FORMULARIO */
-  .form-page { padding: 16px; background: #f0f4f7; flex: 1; overflow-y: auto; }
-  .form-section {
-    background: white;
-    border-radius: 16px;
-    padding: 16px;
-    margin-bottom: 14px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  .form-section-label {
-    font-size: 11px;
-    font-weight: 700;
-    color: #aaa;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 14px;
-  }
-  .form-name-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 0; }
-  .field-label { font-size: 12px; color: #888; margin-bottom: 5px; }
-  .f-input, .f-textarea {
-    width: 100%;
-    border: 1.5px solid #d0dde6;
-    border-radius: 10px;
-    padding: 10px 12px;
-    font-size: 14px;
-    font-family: inherit;
-    color: #1a1a1a;
-    background: #f8fbfc;
-    outline: none;
-    transition: border-color 0.2s;
-  }
-  .f-input:focus, .f-textarea:focus { border-color: #3A5068; background: white; }
-  .f-textarea { min-height: 90px; resize: vertical; }
-
-  .stars { display: flex; gap: 6px; }
-  .star { font-size: 32px; cursor: pointer; color: #e0e0e0; transition: color 0.15s, transform 0.1s; }
-  .star:hover { transform: scale(1.1); }
-  .star.active { color: #EF9F27; }
-  .stars-label { font-size: 12px; color: #aaa; margin-top: 6px; height: 18px; }
-
-  .area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-  .area-chip {
-    border: 1.5px solid #d0dde6;
-    border-radius: 12px;
-    padding: 10px 8px;
-    font-size: 13px;
-    cursor: pointer;
-    text-align: center;
-    color: #666;
-    background: white;
-    transition: all 0.15s;
-    display: flex; align-items: center; justify-content: center; gap: 5px;
-    font-family: inherit;
-  }
-  .area-chip:hover { border-color: #3A5068; color: #3A5068; }
-  .area-chip.selected { background: #3A5068; color: #EAF4F8; border-color: #3A5068; }
-
-  .submit-btn {
-    width: 100%;
-    margin-top: 4px;
-    background: #3A5068;
-    color: #EAF4F8;
-    border: none;
-    border-radius: 14px;
-    padding: 15px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: inherit;
-    transition: background 0.2s, transform 0.1s;
-  }
-  .submit-btn:hover { background: #2C3E4F; }
-  .submit-btn:active { transform: scale(0.98); }
-
-  /* ÉXITO */
-  .success-screen {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 28px;
-    text-align: center;
-    background: #f0f4f7;
-  }
-  .success-circle {
-    width: 80px; height: 80px;
-    background: #dff0f5;
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
-  .success-title { font-size: 22px; font-weight: 700; margin-bottom: 10px; color: #1a1a1a; }
-  .success-desc { font-size: 14px; color: #888; line-height: 1.6; max-width: 260px; }
-  .success-back {
-    margin-top: 28px;
-    background: #3A5068;
-    color: #EAF4F8;
-    border: none;
-    border-radius: 14px;
-    padding: 13px 32px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: inherit;
-  }
-  .success-back:hover { background: #2C3E4F; }
 </style>
-</head>
 <body>
-<div class="phone-frame">
-  <div class="notch"></div>
-  <div class="app">
 
     <!-- HOME -->
     <div id="s-home" class="screen active">
@@ -319,7 +203,7 @@
         <div class="home-divider"></div>
       </div>
       <div class="menu-grid">
-        <div class="menu-card" onclick="location.href='Normas_Torde.html'">
+        <div class="menu-card" onclick="location.href='../Normas.html'">
           <div class="menu-icon icon-normas">📋</div>
           <div>
             <div class="menu-text-title">Normas del apartamento</div>
@@ -344,7 +228,7 @@
           <span class="menu-arrow">›</span>
         </div>
         <div class="menu-card" onclick="go('s-wifi')">
-          <div class="menu-icon icon-wifi">📶</div>
+          <div class="menu-icon icon-wifi">🛜</div>
           <div>
             <div class="menu-text-title">WiFi del apartamento</div>
             <div class="menu-text-sub">Red y contraseña de acceso</div>
@@ -355,6 +239,20 @@
     </div>
 
     <!-- NORMAS -->
+    <div id="s-normas" class="screen">
+      <div class="header">
+        <button class="header-back" onclick="go('s-home')">‹</button>
+        <div>
+          <div class="header-title">Normas del apartamento</div>
+          <div class="header-sub">Grupo Oliveira · Régimen interno</div>
+        </div>
+      </div>
+      <div class="normas-page">
+
+      </div>
+    </div>
+
+        <!-- GUÍA TURÍSTICA -->
     <div id="s-wifi" class="screen">
       <div class="header">
         <button class="header-back" onclick="go('s-home')">‹</button>
@@ -363,7 +261,7 @@
       <div class="wifi-page">
         <div class="wifi-card">
           <div class="wifi-header-bar">
-            <div class="wifi-icon-lg">📶</div>
+            <div class="wifi-icon-lg">🛜</div>
             <div class="wifi-header-title">Conexión WiFi gratuita</div>
             <div class="wifi-header-sub">Incluida en tu estancia</div>
           </div>
@@ -399,9 +297,6 @@
         </div>
       </div>
     </div>
-
-   
-    <div class="menu-card" onclick="location.href='../Informacion_Torde.html'">
   </div>
 </div>
 
@@ -409,7 +304,6 @@
 // ── APARTAMENTO (desde URL: ?apto=201) ───────────────────────────────────────
 const urlParams = new URLSearchParams(window.location.search);
 const aptoNum = urlParams.get('apto') || 'No especificado';
- 
 
 // ── NAVEGACIÓN ───────────────────────────────────────────────────────────────
 function go(id) {
@@ -435,24 +329,6 @@ function copyText(txt, btn) {
     btn.textContent = '✗ error'; setTimeout(() => btn.textContent = 'copiar', 1500);
   }
 }
-
-// ── FORMULARIO ────────────────────────────────────────────────────────────────
-let rating = 0;
-let selectedArea = '';
-const starLabels = ['', 'Muy mala 😞', 'Mala 😕', 'Regular 😐', 'Buena 😊', 'Excelente 🤩'];
-
-document.querySelectorAll('.star').forEach(s => {
-  s.addEventListener('click', () => {
-    rating = +s.dataset.v;
-    document.querySelectorAll('.star').forEach(st => st.classList.toggle('active', +st.dataset.v <= rating));
-    document.getElementById('starsLabel').textContent = starLabels[rating];
-  });
-});
-
-function selectArea(el) {
-  document.querySelectorAll('.area-chip').forEach(c => c.classList.remove('selected'));
-  el.classList.add('selected');
-  selectedArea = el.dataset.area;
-}
+</script>
 </body>
 </html>
