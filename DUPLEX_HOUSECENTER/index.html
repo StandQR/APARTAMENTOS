@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Grupo Oliveira — Apartamentos Turísticos - HOUSECENTER</title>
+<title>Grupo Oliveira — Apartamentos Turísticos</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -119,7 +119,6 @@
     flex-shrink: 0;
   }
   .icon-map { background: #dff0f5; }
-  .icon-normas { background: #EEF0FA; }
 
 
   .schedule-days { font-weight: 700; color: #3A5068; font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; min-width: 70px; }
@@ -131,37 +130,7 @@
   .badge-free-cond { background: #EEF0FA; color: #3A5068; }
 
   /* Normas */
-  .normas-page { padding: 0 0 24px; background: #f0f4f7; flex: 1; overflow-y: auto; }
-  .normas-block { margin: 14px 16px 0; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-  .normas-block-header {
-    background: #3A5068; color: white;
-    padding: 12px 16px;
-    font-size: 13px; font-weight: 700;
-    display: flex; align-items: center; gap: 8px;
-  }
-  .normas-block-body { padding: 14px 16px; }
-  .normas-item {
-    display: flex; gap: 10px;
-    font-size: 13px; color: #444; line-height: 1.55;
-    padding: 6px 0;
-    border-bottom: 1px solid #f0f4f7;
-  }
-  .normas-item:last-child { border-bottom: none; }
-  .normas-num { color: #7bbfcc; font-weight: 700; flex-shrink: 0; width: 18px; }
-  .normas-text-block { font-size: 13px; color: #444; line-height: 1.6; padding: 4px 0; }
-  .normas-highlight {
-    background: #EEF0FA; border-left: 3px solid #3A5068;
-    border-radius: 0 8px 8px 0;
-    padding: 10px 14px; margin: 8px 0;
-    font-size: 12px; color: #3A5068; line-height: 1.55;
-  }
-  .normas-tag {
-    display: inline-flex; align-items: center; gap: 5px;
-    background: #fee; color: #c0392b;
-    border-radius: 20px; padding: 3px 10px;
-    font-size: 11px; font-weight: 700;
-    margin: 3px 3px 3px 0;
-  }
+  .icon-normas { background: #EEF0FA; }
   .icon-wifi { background: #dff0f5; }
   .icon-form { background: #e8f0f5; }
   .menu-text-title { font-size: 15px; font-weight: 600; color: #2a2a2a; }
@@ -350,7 +319,7 @@
         <div class="home-divider"></div>
       </div>
       <div class="menu-grid">
-        <div class="menu-card" onclick="go('s-normas')">
+        <div class="menu-card" onclick="location.href='Normas_Torde.html'">
           <div class="menu-icon icon-normas">📋</div>
           <div>
             <div class="menu-text-title">Normas del apartamento</div>
@@ -375,7 +344,7 @@
           <span class="menu-arrow">›</span>
         </div>
         <div class="menu-card" onclick="go('s-wifi')">
-          <div class="menu-icon icon-wifi">🛜</div>
+          <div class="menu-icon icon-wifi">📶</div>
           <div>
             <div class="menu-text-title">WiFi del apartamento</div>
             <div class="menu-text-sub">Red y contraseña de acceso</div>
@@ -386,80 +355,6 @@
     </div>
 
     <!-- NORMAS -->
-    <div id="s-normas" class="screen">
-      <div class="header">
-        <button class="header-back" onclick="go('s-home')">‹</button>
-        <div>
-          <div class="header-title">Normas del apartamento</div>
-          <div class="header-sub">Grupo Oliveira · Régimen interno</div>
-        </div>
-      </div>
-      <div class="normas-page">
-
-        <div class="normas-block">
-          <div class="normas-block-header">✅ Servicios incluidos</div>
-          <div class="normas-block-body">
-            <div class="normas-item"><span class="normas-num">1</span><span>Ropa de cama y toallas. Cambio de baño cada 3 días, lencería cada 4 días.</span></div>
-            <div class="normas-item"><span class="normas-num">2</span><span>Cocina totalmente equipada: cubiertos, platos, vasos, sartenes, cacerolas, cafetera, nevera-congelador y más.</span></div>
-            <div class="normas-item"><span class="normas-num">3</span><span>Salón-comedor con televisión.</span></div>
-            <div class="normas-item"><span class="normas-num">4</span><span>WiFi incluido.</span></div>
-            <div class="normas-item"><span class="normas-num">5</span><span>Conjunto de limpieza: escoba, recogedor, fregona, balleta, estropajo y trapo de cocina.</span></div>
-            <div class="normas-item"><span class="normas-num">6</span><span>Consumibles: gel, champú, jabón lavadora, papel higiénico y cerillas.</span></div>
-            <div class="normas-item"><span class="normas-num">7</span><span>Dosificador de jabón y gel en baños; lavavajillas en cocina.</span></div>
-            <div class="normas-item"><span class="normas-num">8</span><span>Tabla de planchar, plancha, lavadora, tendal y pinzas.</span></div>
-            <div class="normas-item"><span class="normas-num">9</span><span>Secador de pelo.</span></div>
-            <div class="normas-item"><span class="normas-num">10</span><span>Información y documentación turística de la zona.</span></div>
-          </div>
-        </div>
-
-        <div class="normas-block">
-          <div class="normas-block-header">🕐 Horarios</div>
-          <div class="normas-block-body">
-            <div class="normas-item"><span class="normas-num">🔑</span><span><strong>Entrada:</strong> a partir de las 13:00 h del día de llegada.</span></div>
-            <div class="normas-item"><span class="normas-num">🚪</span><span><strong>Salida:</strong> antes de las 11:00 h del día de salida. Pasada esa hora se contabiliza un día más.</span></div>
-            <div class="normas-highlight">🌙 <strong>Horas de descanso: 22:00 – 9:00 h</strong> todos los días. Queda terminantemente prohibida cualquier actividad que perturbe el descanso.</div>
-          </div>
-        </div>
-
-        <div class="normas-block">
-          <div class="normas-block-header">🚫 Prohibiciones</div>
-          <div class="normas-block-body">
-            <div style="display:flex;flex-wrap:wrap;gap:6px;padding:4px 0 10px;">
-              <span class="normas-tag">🎉 Fiestas prohibidas</span>
-              <span class="normas-tag">🐾 No animales</span>
-              <span class="normas-tag">🚬 No fumar</span>
-              <span class="normas-tag">🔊 Sin ruidos nocturnos</span>
-            </div>
-            <div class="normas-item"><span class="normas-num">1</span><span>No introducir muebles ni realizar obras sin autorización escrita.</span></div>
-            <div class="normas-item"><span class="normas-num">2</span><span>No superar la capacidad máxima del apartamento.</span></div>
-            <div class="normas-item"><span class="normas-num">3</span><span>No destinar el apartamento a fines distintos al alojamiento.</span></div>
-            <div class="normas-item"><span class="normas-num">4</span><span>Prohibido introducir materias explosivas o inflamables.</span></div>
-            <div class="normas-item"><span class="normas-num">5</span><span>Prohibido usar aparatos que alteren sensiblemente el consumo eléctrico sin autorización.</span></div>
-          </div>
-        </div>
-
-        <div class="normas-block">
-          <div class="normas-block-header">💳 Pago y cancelación</div>
-          <div class="normas-block-body">
-            <div class="normas-text-block">El pago se realiza a la llegada, en efectivo o con tarjeta <strong>Visa / MasterCard</strong>.</div>
-            <div class="normas-text-block">Reservas superiores a 4 días: anticipo del <strong>30%</strong> por transferencia bancaria.</div>
-            <div class="normas-text-block">La cancelación gratuita depende de la política contratada con la reserva.</div>
-          </div>
-        </div>
-
-        <div class="normas-block">
-          <div class="normas-block-header">🧹 Limpieza y equipamiento</div>
-          <div class="normas-block-body">
-            <div class="normas-text-block">El apartamento se entrega limpio y ordenado. El cliente se compromete a mantener el orden y la limpieza durante su estancia. Cualquier deterioro o pérdida que se produzca en el apartamento será cargo del cliente.</div>
-            <div class="normas-text-block" style="color:#666;">La empresa no se hace responsable de los efectos personales del cliente ni de los acompañantes.</div>
-            <div class="normas-highlight">⚠️ La dirección realiza un recuento diario del equipamiento (toallas, menaje…). La falta de cualquier elemento será comunicada al cliente y podrá dar lugar a la correspondiente denuncia.</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-        <!-- GUÍA TURÍSTICA -->
     <div id="s-wifi" class="screen">
       <div class="header">
         <button class="header-back" onclick="go('s-home')">‹</button>
@@ -468,7 +363,7 @@
       <div class="wifi-page">
         <div class="wifi-card">
           <div class="wifi-header-bar">
-            <div class="wifi-icon-lg">🛜</div>
+            <div class="wifi-icon-lg">📶</div>
             <div class="wifi-header-title">Conexión WiFi gratuita</div>
             <div class="wifi-header-sub">Incluida en tu estancia</div>
           </div>
@@ -504,6 +399,60 @@
         </div>
       </div>
     </div>
+
+    <!-- FORMULARIO -->
+    <div id="s-form" class="screen">
+      <div class="header">
+        <button class="header-back" onclick="go('s-home')">‹</button>
+        <div><div class="header-title">Opiniones y reclamaciones</div></div>
+      </div>
+      <div class="form-page">
+
+        <div class="form-section">
+          <div class="form-section-label">¿Cómo va la estancia?</div>
+          <div class="stars" id="stars">
+            <span class="star" data-v="1">★</span>
+            <span class="star" data-v="2">★</span>
+            <span class="star" data-v="3">★</span>
+            <span class="star" data-v="4">★</span>
+            <span class="star" data-v="5">★</span>
+          </div>
+          <div class="stars-label" id="starsLabel">Selecciona una puntuación</div>
+        </div>
+        <div class="form-section">
+          <div class="form-section-label">Área relacionada</div>
+          <div class="area-grid">
+            <button class="area-chip" data-area="limpieza" onclick="selectArea(this)">🧹 Limpieza</button>
+            <button class="area-chip" data-area="atencion" onclick="selectArea(this)">🤝 Atención al cliente</button>
+            <button class="area-chip" data-area="checkin" onclick="selectArea(this)">🏠 Check-in</button>
+            <button class="area-chip" data-area="ruido" onclick="selectArea(this)">🔇 Ruido</button>
+            <button class="area-chip" data-area="instalaciones" onclick="selectArea(this)">🚿 Instalaciones</button>
+            <button class="area-chip" data-area="otro" onclick="selectArea(this)">💬 Otro</button>
+          </div>
+        </div>
+        <div class="form-section">
+          <div class="form-section-label">Descripción</div>
+          <textarea class="f-textarea" id="f-desc" placeholder="Cuéntanos qué ocurrió o qué podríamos mejorar..."></textarea>
+        </div>
+        <button class="submit-btn" onclick="submitForm()">Enviar opinión</button>
+      </div>
+    </div>
+
+    <!-- ÉXITO -->
+    <div id="s-ok" class="screen">
+      <div class="header">
+        <div style="width:30px"></div>
+        <div><div class="header-title">Grupo Oliveira</div></div>
+      </div>
+      <div class="success-screen">
+        <div class="success-circle">✅</div>
+        <div class="success-title">¡Gracias por tu opinión!</div>
+        <div class="success-desc">Hemos recibido tu mensaje. Nuestro equipo lo revisará y tomará las medidas necesarias para mejorar tu estancia.</div>
+        <div id="ok-apto" style="margin-top:8px;font-size:12px;color:#7bbfcc;font-weight:600;"></div>
+        <button class="success-back" onclick="go('s-home')">Volver al menú</button>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -535,6 +484,41 @@ function copyText(txt, btn) {
   } catch(e) {
     btn.textContent = '✗ error'; setTimeout(() => btn.textContent = 'copiar', 1500);
   }
+}
+
+// ── FORMULARIO ────────────────────────────────────────────────────────────────
+let rating = 0;
+let selectedArea = '';
+const starLabels = ['', 'Muy mala 😞', 'Mala 😕', 'Regular 😐', 'Buena 😊', 'Excelente 🤩'];
+
+document.querySelectorAll('.star').forEach(s => {
+  s.addEventListener('click', () => {
+    rating = +s.dataset.v;
+    document.querySelectorAll('.star').forEach(st => st.classList.toggle('active', +st.dataset.v <= rating));
+    document.getElementById('starsLabel').textContent = starLabels[rating];
+  });
+});
+
+function selectArea(el) {
+  document.querySelectorAll('.area-chip').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  selectedArea = el.dataset.area;
+}
+
+function submitForm() {
+  const desc = document.getElementById('f-desc').value.trim();
+  if (!rating || !selectedArea || !desc) {
+    const btn = document.querySelector('.submit-btn');
+    btn.textContent = '⚠️ Completa todos los campos';
+    btn.style.background = '#1e5f74';
+    setTimeout(() => { btn.textContent = 'Enviar opinión'; btn.style.background = '#3A5068'; }, 2200);
+    return;
+  }
+  // Show apartment number in success screen
+  document.getElementById('ok-apto').textContent = aptoNum !== 'No especificado'
+    ? 'Apartamento ' + aptoNum
+    : '';
+  go('s-ok');
 }
 </script>
 </body>
