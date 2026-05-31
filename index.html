@@ -120,6 +120,11 @@
   }
   .icon-map { background: #dff0f5; }
   .icon-normas { background: #EEF0FA; }
+  .icon-wifi { background: #dff0f5; }
+  .icon-form { background: #e8f0f5; }
+  .menu-text-title { font-size: 15px; font-weight: 600; color: #2a2a2a; }
+  .menu-text-sub { font-size: 12px; color: #888; margin-top: 3px; }
+  .menu-arrow { margin-left: auto; color: #ccc; font-size: 20px; font-weight: 300; }
 
 
   .schedule-days { font-weight: 700; color: #3A5068; font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; min-width: 70px; }
@@ -183,6 +188,9 @@
   .qr-placeholder-text { font-size: 10px; color: #aaa; text-align: center; line-height: 1.4; }
   .qr-note { font-size: 11px; color: #aaa; margin-top: 12px; }
 
+</style>
+<body>
+
     <!-- HOME -->
     <div id="s-home" class="screen active">
       <div class="home-hero">
@@ -194,7 +202,7 @@
         <div class="home-divider"></div>
       </div>
       <div class="menu-grid">
-        <div class="menu-card" onclick="go('s-normas')">
+        <div class="menu-card" onclick="location.href='Normas_Torde.html'">
           <div class="menu-icon icon-normas">📋</div>
           <div>
             <div class="menu-text-title">Normas del apartamento</div>
@@ -232,7 +240,7 @@
     <!-- NORMAS -->
     <div id="s-normas" class="screen">
       <div class="header">
-        <button class="header-back" onclick="location.href='Normas.html'">‹</button>
+        <button class="header-back" onclick="history.back()">‹</button>
         <div>
           <div class="header-title">Normas del apartamento</div>
           <div class="header-sub">Grupo Oliveira · Régimen interno</div>
@@ -246,13 +254,13 @@
         <!-- GUÍA TURÍSTICA -->
     <div id="s-wifi" class="screen">
       <div class="header">
-        <button class="header-back" onclick="location.href='Informacion_Torde.html'"">‹</button>
+        <button class="header-back" onclick="location.href='Informacion_Torde.html'">‹</button>
         <div><div class="header-title">WiFi del apartamento</div></div>
       </div>
       <div class="wifi-page">
         <div class="wifi-card">
           <div class="wifi-header-bar">
-            <div class="wifi-icon-lg">🛜</div>
+            <div class="wifi-icon-lg">📶</div>
             <div class="wifi-header-title">Conexión WiFi gratuita</div>
             <div class="wifi-header-sub">Incluida en tu estancia</div>
           </div>
