@@ -1,2 +1,0 @@
-# APARTAMENTOS
-Apartamentos Tordesillas
