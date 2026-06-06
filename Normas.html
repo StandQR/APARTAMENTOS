@@ -10,6 +10,8 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: #f0f4f7;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
   /* Header */
@@ -40,7 +42,7 @@
   .header-sub { font-size: 12px; opacity: 0.75; margin-top: 2px; }
 
   /* Normas */
-  .normas-page { padding: 0 0 24px; background: #f0f4f7; }
+  .normas-page { padding: 0 0 0; background: #f0f4f7; flex: 1; display: flex; flex-direction: column; }
   .normas-block { margin: 14px 16px 0; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
   .normas-block-header {
     background: #3A5068; color: white;
@@ -76,7 +78,8 @@
     flex-direction: column;
     align-items: center;
     gap: 2px;
-    padding: 18px 0 8px;
+    padding: 18px 0 12px;
+    margin-top: auto;
   }
   .legal-links {
     display: flex;
