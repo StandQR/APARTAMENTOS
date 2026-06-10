@@ -33,10 +33,13 @@
     display: none; 
     flex-direction: column; 
     flex: 1;
-    overflow: hidden;
     height: 100%;
+    overflow: hidden;
   }
   .screen.active { display: flex; }
+  #s-home {
+    overflow: visible;
+  }
 
   /* Header */
   .header {
@@ -105,22 +108,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px;
-    padding: 6px 0 8px;
+    gap: 5px;
+    padding: 10px 16px 18px;
     background: #f0f4f7;
     flex-shrink: 0;
+    border-top: 1px solid #d8e4ec;
   }
   .legal-links {
     display: flex;
-    gap: 12px;
+    gap: 6px;
+    align-items: center;
   }
   .legal-links a {
-    font-size: 10px;
-    color: #aab8c2;
+    font-size: 10.5px;
+    color: #7a9ab0;
     text-decoration: none;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
   }
-  .legal-links a:hover { color: #7bbfcc; }
+  .legal-links a:hover { color: #3A5068; }
+  .legal-links-sep {
+    font-size: 9px;
+    color: #b0c4d0;
+  }
   .legal-brand {
     font-size: 9px;
     color: #c8d4da;
@@ -270,7 +279,7 @@
       <div class="legal-footer">
         <div class="legal-links">
           <a href="https://apartamentosgo.com/politica-de-privacidad/" target="_blank">Política de privacidad</a>
-          <a>·</a>
+          <span class="legal-links-sep">·</span>
           <a href="https://apartamentosgo.com/aviso-legal/" target="_blank">Aviso legal</a>
         </div>
         <div class="legal-brand">Diseñado por StandQR</div>
