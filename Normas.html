@@ -9,7 +9,9 @@
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: #f0f4f7;
-    min-height: 100vh;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
   }
@@ -42,7 +44,7 @@
   .header-sub { font-size: 12px; opacity: 0.75; margin-top: 2px; }
 
   /* Normas */
-  .normas-page { padding: 0 0 0; background: #f0f4f7; flex: 1; display: flex; flex-direction: column; }
+  .normas-page { padding: 0 0 0; background: #f0f4f7; flex: 1; overflow-y: auto; min-height: 0; }
   .normas-block { margin: 14px 16px 0; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
   .normas-block-header {
     background: #3A5068; color: white;
@@ -78,8 +80,9 @@
     flex-direction: column;
     align-items: center;
     gap: 2px;
-    padding: 18px 0 12px;
-    margin-top: auto;
+    padding: 12px 0 10px;
+    background: #f0f4f7;
+    flex-shrink: 0;
   }
   .legal-links {
     display: flex;
